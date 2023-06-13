@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr ':' '\n' | nc -1
+echo $((`echo $PATH | grep -0 ":/" | uc  -1'+ 1))
